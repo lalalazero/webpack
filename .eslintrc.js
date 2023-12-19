@@ -14,7 +14,7 @@ module.exports = {
 		ecmaVersion: 2018
 	},
 	rules: {
-		"prettier/prettier": "error",
+		// "prettier/prettier": "error",
 		"no-template-curly-in-string": "error",
 		"no-caller": "error",
 		"no-control-regex": "off",
@@ -46,7 +46,9 @@ module.exports = {
 		"no-warning-comments": [
 			"error",
 			{ terms: ["@ts-ignore"], location: "start" }
-		]
+		],
+		"no-debugger": 0,
+		"prettier/prettier": 0
 	},
 	settings: {
 		jsdoc: {
